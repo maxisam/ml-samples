@@ -1,4 +1,4 @@
-# Tensorflow Samples
+# Machine Learning Samples
 
 This repository is dedicated to explore Tensorflow features and Machine Learning in general.\
 The topics are organized in folders to facilited the navigation.
