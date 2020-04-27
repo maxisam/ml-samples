@@ -1,4 +1,4 @@
-# My Machine
+# Run My Machine
 docker run -v ~/Users/renatoleite/Documents/ml/automl-tables/model-export/tbl/model:/models/default/0000001 -p 8080:8080 -it gcr.io/cloud-automl-tables-public/model_server
 
 # Cloud Shell
