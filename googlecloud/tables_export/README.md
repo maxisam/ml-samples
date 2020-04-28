@@ -127,4 +127,8 @@ Get this value from the services deployed.
 ```
 
 For each .yaml file, execute:
+<<<<<<< HEAD
 > kubectl apply -f {file_name}
+=======
+> kubectl apply -f {file_name}
+>>>>>>> 7b9730309526eef5581460ec8edaed4f008ccc36
