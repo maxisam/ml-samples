@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: model
+        track: stable
+        version: 1.0.0
+    spec:
+      containers:
+        - name: model
+          image: gcr.io/cool-ml-demos/model_server:latest
+          ports:
+            - name: http
+              containerPort: 8080
