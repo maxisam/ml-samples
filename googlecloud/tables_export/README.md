@@ -3,6 +3,10 @@
 This guide walks you through the process of exporting and testing your model from AutoML Tables on a Kubernetes cluster.\
 The goal here is to demonstrate who to use an exported model from AutoML and a simple script to make request to it.
 
+High level architecture of this tutorial:
+
+![architecture](/diagrams/architecture.png)
+
 ps.: For this example I create a model with the Creditcard dataset from Kaggle. (https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Export the models from AutoML Tables
@@ -127,8 +131,4 @@ Get this value from the services deployed.
 ```
 
 For each .yaml file, execute:
-<<<<<<< HEAD
 > kubectl apply -f {file_name}
-=======
-> kubectl apply -f {file_name}
->>>>>>> 7b9730309526eef5581460ec8edaed4f008ccc36
