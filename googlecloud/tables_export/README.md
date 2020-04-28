@@ -35,7 +35,10 @@ Dockerfile:
 
 Build and push your image:
 > docker build -t gcr.io/{your project}/model_server:latest .
+
 > docker push gcr.io/{your project}/model_server:latest
+
+(you can push the images to a local registry as well.)
 
 Note that you must have the necessary permissions to push the image.
 
