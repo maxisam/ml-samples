@@ -132,3 +132,5 @@ Get this value from the services deployed.
 
 For each .yaml file, execute:
 > kubectl apply -f {file_name}
+
+After the model and requester are deployed, your can increase the number of nodes in your cluster, the number of PODs in your serving and requester.
