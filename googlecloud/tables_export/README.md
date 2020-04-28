@@ -5,13 +5,13 @@ The goal here is to demonstrate who to use an exported model from AutoML and a s
 
 High level architecture of this tutorial:
 
-![architecture](/diagrams/architecture.png)
+![architecture](https://github.com/leiterenato/ml-samples/blob/master/googlecloud/tables_export/diagrams/architecture.png "Architecture")
 
 ps.: For this example I create a model with the Creditcard dataset from Kaggle. (https://www.kaggle.com/mlg-ulb/creditcardfraud)
 
 ## Export the models from AutoML Tables
 
-![export model](/diagrams/export.png)
+![export model](https://github.com/leiterenato/ml-samples/blob/master/googlecloud/tables_export/diagrams/export.png "Export Model")
 
 After exporting the model, copy to your working machine and change the name of your folder to remove the timestamp (avoid naming problems).\
 Example from documentation:
