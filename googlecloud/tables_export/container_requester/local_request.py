@@ -1,6 +1,7 @@
 import requests
 import json
 import datetime
+import os
 
 # Imports the Google Cloud client library
 import google.cloud.logging
@@ -14,10 +15,7 @@ def _set_logging_client():
     # all logs at INFO level and higher
     client.setup_logging()
 
-def _get_url_payload():
-
-    url = 'http://localhost:8080/predict'
-
+def _get_payload():
     payload = {
         "instances": 
             [
@@ -56,9 +54,11 @@ def _get_url_payload():
             ]
     }
 
-    return url, json.dumps(payload)
+    return json.dumps(payload)
 
-url, payload = _get_url_payload()
+url = os.getenv('URL')
+
+payload = _get_payload()
 _set_logging_client()
 
 while True:
@@ -67,3 +67,4 @@ while True:
     total_time = datetime.datetime.now() - time_now
 
     logging.warning(str(total_time.microseconds/1000))
+    logging.warning(result.text)

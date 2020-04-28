@@ -4,6 +4,10 @@ metadata:
   name: model
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: model
+      version: 1.0.0
   template:
     metadata:
       labels:

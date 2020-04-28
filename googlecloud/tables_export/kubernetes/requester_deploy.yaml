@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: requester
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: requester
+  template:
+    metadata:
+      labels:
+        app: requester
+    spec:
+      containers:
+        - name: requester
+          image: gcr.io/cool-ml-demos/requester:latest
+          env:
+            - name: URL
+              value: "http://35.230.177.138:8080/predict"
+          ports:
+            - name: http
+              containerPort: 8080
