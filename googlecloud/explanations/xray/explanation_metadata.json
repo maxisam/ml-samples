@@ -1,1 +1,1 @@
-{"inputs": {"data": {"input_tensor_name": "input_pixels:0", "modality": "image", "input_baselines": [0, 1]}}, "outputs": {"probability": {"output_tensor_name": "dense/BiasAdd:0"}}, "framework": "tensorflow"}
+{"inputs": {"data": {"input_tensor_name": "input_pixels:0", "modality": "image", "input_baselines": [0, 1]}}, "outputs": {"probability": {"output_tensor_name": "dense_1/BiasAdd:0"}}, "framework": "tensorflow"}
